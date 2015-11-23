@@ -30,9 +30,8 @@ function buildCss(cfg){
                     }
                     var matched = s.match(extractPattern);
                     if(matched){
-                        console.log();
-                        var content = elem.style.content.replace(/"\\f([0-9a-z]+)"/,'&#xf$1;');
-                        map[String(matched[nameGrp])] = String(content);
+                        var content = elem.style.content.replace(/"\\([0-9a-z]+)"/,'0x$1');
+                        map[String(matched[nameGrp])] = parseInt(content);
                     }
                 }
             });
@@ -40,7 +39,7 @@ function buildCss(cfg){
             "/** Created by iconfont-map-builder */",
             "var map =",
             JSON.stringify(map),
-            ";module.exports = (name)=>map[name];"];
+            ";module.exports = (name)=>String.fromCharCode(map[name]);"];
         fs.writeFileSync(mapFile,output.join('\n'));
 }
 
