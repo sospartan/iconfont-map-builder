@@ -1,0 +1,21 @@
+{
+  "name": "iconfont-map-builder",
+  "version": "1.0.0",
+  "description": "Transform iconfont's css file to js 'name-character' map  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "bin":{
+    "iconmap":"./index.js"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=4"
+  },
+  "author": "sospartan",
+  "license": "ISC",
+  "dependencies": {
+    "cssom": "^0.3.0"
+  }
+}
