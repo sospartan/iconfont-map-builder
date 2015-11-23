@@ -9,11 +9,15 @@
   "bin":{
     "iconmap":"./index.js"
   },
-  "keywords": [],
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/sospartan/iconfont-map-builder"
+  },
+  "keywords": ["css","iconfont","font"],
   "engines": {
     "node": ">=4"
   },
-  "author": "sospartan",
+  "author": "sospartan@gmail.com",
   "license": "ISC",
   "dependencies": {
     "cssom": "^0.3.0"
