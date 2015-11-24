@@ -1,5 +1,7 @@
 # iconfont-map-builder  
-Simple command tool to transform iconfont's css file to a js mapping moudle .
+Simple command tool to transform iconfont's css/codepoint file to a js mapping moudle .
+
+I'm using the module in [react-native-iconic-font](<https://github.com/sospartan/react-native-iconic-font>) to generate the iconic map file
 
 ## Usage  
 install this tool via npm  
