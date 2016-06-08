@@ -31,7 +31,7 @@ function buildCss(cfg){
                     }
                     var matched = s.match(extractPattern);
                     if(matched){
-                        var content = elem.style.content.replace(/"\\([0-9a-z]+)"/,'0x$1');
+                        var content = elem.style.content.replace(/"\\([0-9A-Za-z]+)"/,'0x$1');
                         map[matched[nameGrp]] = parseInt(content);
                     }
                 }
